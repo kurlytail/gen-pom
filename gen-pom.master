@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:master="http://www.brainspeedtech.com/swarm/master" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_-TamgBDuEemTjfViw8Dr1w" type="Master" element="_-TamghDuEemTjfViw8Dr1w" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-TamgRDuEemTjfViw8Dr1w"/>
+  </notation:Diagram>
+  <master:MasterDesign xmi:id="_-TamghDuEemTjfViw8Dr1w" name="gen-pom"/>
+</xmi:XMI>
