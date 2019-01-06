@@ -31,6 +31,6 @@ describe('# integration test', () => {
             './scripts/sgen-pom.sh -d src/test/fixture/design.js -o testoutput --overwrite=merge'
         ).toString();
         expect(output).toMatchSnapshot();
-        output = execSync('mvn package', { cwd: 'testoutput' }).toString();
+        output = execSync('/usr/local/bin/mvn package', { cwd: 'testoutput' }).toString();
     });
 });
