@@ -1,0 +1,41 @@
+{
+    ".setings/org.eclipse.jdt.core.prefs": {
+        "template": ".settings/org.eclipse.jdt.core.prefs._"
+    },
+    ".settings/org.eclipse.m2e.core.prefs": {
+        "template": ".settings/org.eclipse.m2e.core.prefs._"
+    },
+    "src/main/java/.gitkeep": {
+        "template": "src/main/java/.gitkeep._"
+    },
+    "src/main/resources/.gitkeep": {
+        "template": "src/main/resources/.gitkeep._"
+    },
+    "src/test/java/.gitkeep": {
+        "template": "src/test/java/.gitkeep._"
+    },
+    "src/test/resources/.gitkeep": {
+        "template": "src/test/resources/.gitkeep._"
+    },
+    ".classpath": {
+        "template": ".classpath._"
+    },
+    ".project": {
+        "template": ".project._"
+    },
+    "pom.xml": {
+        "template": "pom.xml._"
+    },
+    ".gitignore": {
+        "template": ".gitignore._"
+    },
+    "Jenkinsfile": {
+        "template": "Jenkinsfile._"
+    },
+    "settings.xml": {
+        "template": "settings.xml._"
+    },
+    "maven.pem": {
+        "template": "maven.pem._"
+    }
+}

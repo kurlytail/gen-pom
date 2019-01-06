@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# integration test ## should generate design 1`] = `
+"info: Generating testoutput/.setings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
+info: Generating testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
+info: Generating testoutput/src/main/java/.gitkeep from template templates/src/main/java/.gitkeep._
+info: Generating testoutput/src/main/resources/.gitkeep from template templates/src/main/resources/.gitkeep._
+info: Generating testoutput/src/test/java/.gitkeep from template templates/src/test/java/.gitkeep._
+info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
+info: Generating testoutput/.classpath from template templates/.classpath._
+info: Generating testoutput/.project from template templates/.project._
+info: Generating testoutput/pom.xml from template templates/pom.xml._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/settings.xml from template templates/settings.xml._
+info: Generating testoutput/maven.pem from template templates/maven.pem._
+"
+`;
+
+exports[`# integration test ## should generate design and run pom commands 1`] = `
+"info: Generating testoutput/.setings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
+info: Generating testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
+info: Generating testoutput/src/main/java/.gitkeep from template templates/src/main/java/.gitkeep._
+info: Generating testoutput/src/main/resources/.gitkeep from template templates/src/main/resources/.gitkeep._
+info: Generating testoutput/src/test/java/.gitkeep from template templates/src/test/java/.gitkeep._
+info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
+info: Generating testoutput/.classpath from template templates/.classpath._
+info: Generating testoutput/.project from template templates/.project._
+info: Generating testoutput/pom.xml from template templates/pom.xml._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/settings.xml from template templates/settings.xml._
+info: Generating testoutput/maven.pem from template templates/maven.pem._
+"
+`;
+
+exports[`# integration test ## should generate design with merge 1`] = `
+"info: Generating testoutput/.setings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
+info: Generating testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
+info: Generating testoutput/src/main/java/.gitkeep from template templates/src/main/java/.gitkeep._
+info: Generating testoutput/src/main/resources/.gitkeep from template templates/src/main/resources/.gitkeep._
+info: Generating testoutput/src/test/java/.gitkeep from template templates/src/test/java/.gitkeep._
+info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
+info: Generating testoutput/.classpath from template templates/.classpath._
+info: Generating testoutput/.project from template templates/.project._
+info: Generating testoutput/pom.xml from template templates/pom.xml._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/settings.xml from template templates/settings.xml._
+info: Generating testoutput/maven.pem from template templates/maven.pem._
+"
+`;
+
+exports[`# integration test ## should generate design with merge 2`] = `
+"info: Generating testoutput/.setings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
+info: Generating testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
+info: Generating testoutput/src/main/java/.gitkeep from template templates/src/main/java/.gitkeep._
+info: Generating testoutput/src/main/resources/.gitkeep from template templates/src/main/resources/.gitkeep._
+info: Generating testoutput/src/test/java/.gitkeep from template templates/src/test/java/.gitkeep._
+info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
+info: Generating testoutput/.classpath from template templates/.classpath._
+info: Generating testoutput/.project from template templates/.project._
+info: Generating testoutput/pom.xml from template templates/pom.xml._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/settings.xml from template templates/settings.xml._
+info: Generating testoutput/maven.pem from template templates/maven.pem._
+"
+`;
+
+exports[`# integration test ## should print help options 1`] = `
+"Usage:
+  node sgen [OPTION]
+
+Options:
+  -m, --map=ARG+       mapping files
+  -d, --design=ARG+    design files
+  -o, --output=ARG     output directory for generated files
+      --overwrite=ARG  Overwrite modes, can be one of skip, regen, error or merge                         (default: skip)
+      --forceOverwrite Override overwrite flags in the generator map with the one provided on --overwrite
+  -h, --help           display this help
+"
+`;
