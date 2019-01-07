@@ -9,6 +9,14 @@ info: Generating testoutput/src/test/java/.gitkeep from template templates/src/t
 info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
+info: loading extension ./scripts/../templates/extensions/pom-model-version._
+info: loading extension ./scripts/../templates/extensions/pom-group-id._
+info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+info: loading extension ./scripts/../templates/extensions/pom-version._
+info: loading extension ./scripts/../templates/extensions/pom-name._
+info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -26,6 +34,14 @@ info: Generating testoutput/src/test/java/.gitkeep from template templates/src/t
 info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
+info: loading extension ./scripts/../templates/extensions/pom-model-version._
+info: loading extension ./scripts/../templates/extensions/pom-group-id._
+info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+info: loading extension ./scripts/../templates/extensions/pom-version._
+info: loading extension ./scripts/../templates/extensions/pom-name._
+info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -43,6 +59,14 @@ info: Generating testoutput/src/test/java/.gitkeep from template templates/src/t
 info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
+info: loading extension ./scripts/../templates/extensions/pom-model-version._
+info: loading extension ./scripts/../templates/extensions/pom-group-id._
+info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+info: loading extension ./scripts/../templates/extensions/pom-version._
+info: loading extension ./scripts/../templates/extensions/pom-name._
+info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -60,6 +84,14 @@ info: Generating testoutput/src/test/java/.gitkeep from template templates/src/t
 info: Generating testoutput/src/test/resources/.gitkeep from template templates/src/test/resources/.gitkeep._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
+info: loading extension ./scripts/../templates/extensions/pom-model-version._
+info: loading extension ./scripts/../templates/extensions/pom-group-id._
+info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+info: loading extension ./scripts/../templates/extensions/pom-version._
+info: loading extension ./scripts/../templates/extensions/pom-name._
+info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -75,6 +107,7 @@ exports[`# integration test ## should print help options 1`] = `
 Options:
   -m, --map=ARG+       mapping files
   -d, --design=ARG+    design files
+  -e, --extension=ARG+ extension directories or files
   -o, --output=ARG     output directory for generated files
       --overwrite=ARG  Overwrite modes, can be one of skip, regen, error or merge                         (default: skip)
       --forceOverwrite Override overwrite flags in the generator map with the one provided on --overwrite
