@@ -1,0 +1,5 @@
+package <%=context.packageName%>;
+
+public class <%=context.className%> {
+
+}

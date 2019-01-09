@@ -1,5 +1,9 @@
+<%
+    const packageBaseDir = extension('pom-group-id')[0].replace(/\./, '/') + '/' +
+        lodash.kebabCase(extension('pom-artifact-id')[0]).replace(/-/, '/');
+%>
 {
-    ".setings/org.eclipse.jdt.core.prefs": {
+    ".settings/org.eclipse.jdt.core.prefs": {
         "template": ".settings/org.eclipse.jdt.core.prefs._"
     },
     ".settings/org.eclipse.m2e.core.prefs": {
@@ -17,6 +21,21 @@
     "src/test/resources/.gitkeep": {
         "template": "src/test/resources/.gitkeep._"
     },
+<%
+    Object.keys(design.MasterTube).forEach(key => {
+        const className = lodash.upperFirst(lodash.camelCase(design.MasterTube[key].name));
+%>
+    "src/main/java/<%=packageBaseDir%>/<%=className%>.java" : {
+        "context" : {
+            "className" : "<%=className%>",
+            "packageName" : "<%=packageBaseDir.replace(/\//g, '.')%>",
+            "packageBaseDir" : "<%=packageBaseDir%>"
+        },
+        "template": "src/main/java/master-tube-class.java._"
+    },
+<%
+    })
+%>
     ".classpath": {
         "template": ".classpath._"
     },
