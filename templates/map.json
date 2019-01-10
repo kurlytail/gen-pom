@@ -1,6 +1,8 @@
 <%
     const packageBaseDir = extension('pom-group-id')[0].replace(/\./, '/') + '/' +
         lodash.kebabCase(extension('pom-artifact-id')[0]).replace(/-/, '/');
+    const packageTubeBaseDir = packageBaseDir + "/tubes";
+    const packageCellBaseDir = packageBaseDir + "/cells";
 %>
 {
     ".settings/org.eclipse.jdt.core.prefs": {
@@ -25,13 +27,28 @@
     Object.keys(design.MasterTube).forEach(key => {
         const className = lodash.upperFirst(lodash.camelCase(design.MasterTube[key].name));
 %>
-    "src/main/java/<%=packageBaseDir%>/<%=className%>.java" : {
+    "src/main/java/<%=packageTubeBaseDir%>/<%=className%>.java" : {
         "context" : {
             "className" : "<%=className%>",
-            "packageName" : "<%=packageBaseDir.replace(/\//g, '.')%>",
-            "packageBaseDir" : "<%=packageBaseDir%>"
+            "packageName" : "<%=packageTubeBaseDir.replace(/\//g, '.')%>",
+            "packageBaseDir" : "<%=packageTubeBaseDir%>"
         },
         "template": "src/main/java/master-tube-class.java._"
+    },
+<%
+    })
+%>
+<%
+    Object.keys(design.MasterCell).forEach(key => {
+        const className = lodash.upperFirst(lodash.camelCase(design.MasterCell[key].name));
+%>
+    "src/main/java/<%=packageCellBaseDir%>/<%=className%>.java" : {
+        "context" : {
+            "className" : "<%=className%>",
+            "packageName" : "<%=packageCellBaseDir.replace(/\//g, '.')%>",
+            "packageBaseDir" : "<%=packageCellBaseDir%>"
+        },
+        "template": "src/main/java/master-cell-class.java._"
     },
 <%
     })
