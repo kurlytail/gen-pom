@@ -1,4 +1,4 @@
-package <%=context.packageCellName%>;
+package <%=context.packageDesignName%>;
 
 public class <%=context.className%> {
 
