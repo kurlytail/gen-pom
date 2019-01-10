@@ -1,5 +1,22 @@
 package <%=context.packageDesignName%>;
 
+<%
+Object.keys(design.Flow).forEach(key => {
+    const className = lodash.upperFirst(lodash.camelCase(design.Flow[key].name));
+%>
+import <%=context.packageFlowName%>.<%=className%>;
+<%
+})
+%>
+
 public class <%=context.className%> {
+<%
+Object.keys(design.Flow).forEach(key => {
+    const className = lodash.upperFirst(lodash.camelCase(design.Flow[key].name));
+%>
+    private <%=className%> <%=lodash.lowerFirst(className)%>Flow;
+<%
+})
+%>
 
 }
