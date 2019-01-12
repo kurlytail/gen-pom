@@ -28,9 +28,12 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -67,9 +70,12 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -106,9 +112,12 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -145,9 +154,12 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
