@@ -50,8 +50,8 @@
     }
 %>
 <%
-    Object.keys(design.Flow).forEach(key => {
-        const className = lodash.upperFirst(lodash.camelCase(design.Flow[key].name));
+    _.each(design.Flow, (flow, key) => {
+        const className = lodash.upperFirst(lodash.camelCase(flow.name));
 %>
     "src/main/java/<%=context.packageFlowBaseDir%>/<%=className%>.java" : {
         "template": "src/main/java/master-flow-class.java._",
@@ -63,26 +63,28 @@
     })
 %>
 <%
-    Object.keys(design.MasterTube).forEach(key => {
-        const className = lodash.upperFirst(lodash.camelCase(design.MasterTube[key].name));
+    _.each(design.MasterTube, (tube, key) => {
+        const className = lodash.upperFirst(lodash.camelCase(tube.name));
 %>
     "src/main/java/<%=context.packageTubeBaseDir%>/<%=className%>.java" : {
         "template": "src/main/java/master-tube-class.java._",
         "context" : <%=JSON.stringify(Object.assign({}, context, {
-            className : className
+            className : className,
+            key: key
         }))%>
     },
 <%
     })
 %>
 <%
-    Object.keys(design.MasterCell).forEach(key => {
-        const className = lodash.upperFirst(lodash.camelCase(design.MasterCell[key].name));
+    _.each(design.MasterCell, (cell, key) => {
+        const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
     "src/main/java/<%=context.packageCellBaseDir%>/<%=className%>.java" : {
         "template": "src/main/java/master-cell-class.java._",
         "context" : <%=JSON.stringify(Object.assign({}, context, {
-            className : className
+            className : className,
+            key: key
         }))%>
     },
 <%

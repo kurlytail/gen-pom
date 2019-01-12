@@ -1,9 +1,61 @@
 package <%=context.packageCellName%>;
+<%
+    const cell = design.MasterCell[context.key];
+%>
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 
 import reactor.core.publisher.UnicastProcessor;
+<%_.each(_.union(cell.input, cell.output), port => {
+    const portName = lodash.upperFirst(lodash.camelCase(port.name));
+%>
+import <%=context.packageTubeName%>.<%=portName%>;
+<%});%>
+
 
 public class <%=context.className%> {
+
+<%_.each(cell.input, input => {
+    const inputName = lodash.upperFirst(lodash.camelCase(input.name));
+    const inputClassName = inputName + 'Subscriber';
+    const inputVarName = lodash.lowerFirst(inputName) + 'Subscriber';
+%>
+    private <%=inputClassName%> <%=inputVarName%> = new <%=inputClassName%>();
+    public <%=inputClassName%> get<%=inputClassName%>() {
+        return this.<%=inputVarName%>;
+    }
+
+    class <%=inputClassName%> implements Subscriber<<%=inputName%>> {
+        private Subscription subscription;
+
+        public void onSubscribe(Subscription s) {
+            subscription = s;
+            subscription.request(1);
+        }
+
+        public void onNext(<%=inputName%> t) {
+            subscription.request(1);
+        }
+
+        public void onError(Throwable t) {
+            subscription.request(1);
+        }
+
+        public void onComplete() {
+        }
+    }
+
+<%});%>
+
+<%_.each(cell.output, output => {
+    const outputName = lodash.upperFirst(lodash.camelCase(output.name));
+    const outputClassName = outputName + 'Publisher';
+    const outputVarName = lodash.lowerFirst(outputName) + 'Publisher';
+%>
+    private UnicastProcessor<<%=outputName%>> <%=outputVarName%> = UnicastProcessor.create();
+    public UnicastProcessor<<%=outputName%>> get<%=outputClassName%>() {
+        return this.<%=outputVarName%>;
+    }
+<%});%>
 }

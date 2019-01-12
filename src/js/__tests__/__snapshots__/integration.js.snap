@@ -20,14 +20,17 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cell
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
 info: loading extension ./scripts/../templates/extensions/pom-model-version._
 info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -56,14 +59,17 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cell
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
 info: loading extension ./scripts/../templates/extensions/pom-model-version._
 info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -92,14 +98,17 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cell
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
 info: loading extension ./scripts/../templates/extensions/pom-model-version._
 info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -128,14 +137,17 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cell
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
 info: Generating testoutput/.project from template templates/.project._
 info: loading extension ./scripts/../templates/extensions/pom-model-version._
 info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
+info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
+info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
