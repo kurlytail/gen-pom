@@ -1,5 +1,9 @@
 package <%=context.packageCellName%>;
 
-public class <%=context.className%> {
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
 
+import reactor.core.publisher.UnicastProcessor;
+
+public class <%=context.className%> {
 }

@@ -14,4 +14,15 @@ extension('pom-property-.*').forEach(property => {
 })
 %>
   </properties>
+  <dependencies>
+<%
+extension('pom-dependencies-.*').forEach(dependency => {
+%>
+    <dependency>
+        <%=dependency%>
+    </dependency>
+<%
+})
+%>
+  </dependencies>
 </project>

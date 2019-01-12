@@ -88,6 +88,10 @@
 <%
     })
 %>
+    "src/main/java/<%=context.packageFlowBaseDir%>/Enum.java" : {
+        "template": "src/main/java/master-flow-enum.java._",
+        "context" : <%=JSON.stringify(context)%>
+    },
     ".classpath": {
         "template": ".classpath._"
     },

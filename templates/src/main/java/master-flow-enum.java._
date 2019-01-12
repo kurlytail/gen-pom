@@ -1,0 +1,5 @@
+package <%=context.packageFlowName%>;
+
+public enum Enum {
+    <%=Object.keys(design.Flow).map(key => lodash.snakeCase(design.Flow[key].name).toUpperCase()).join(',')%>
+}
