@@ -1,0 +1,24 @@
+package <%=context.packageCellName%>;
+<%
+    const cells = design.MasterCell[context.key].designCells;
+%>
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+<%_.each(_.union(_.flatten(_.pluck(cells, 'input')), _.flatten(_.pluck(cells, 'output'))), port => {
+    const portName = lodash.upperFirst(lodash.camelCase(port.name));
+%>
+import <%=context.packageTubeName%>.<%=portName%>;
+<%});%>
+
+class <%=context.className%>Test {
+<%_.each(cells, cell => {
+    const flowClassName = lodash.upperFirst(lodash.camelCase(cell.Flow[0].name));
+%>
+    @Test
+    void test<%=flowClassName%>() throws Exception {
+        fail("Not yet implemented");
+    }
+<%});%>
+}

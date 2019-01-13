@@ -25,4 +25,19 @@ extension('pom-dependencies-.*').forEach(dependency => {
 })
 %>
   </dependencies>
+
+  <build>
+    <finalName><%=extension('pom-name')[0]%></finalName>
+    <plugins>
+<%
+extension('pom-plugins-.*').forEach(plugin => {
+%>
+        <plugin>
+            <%=plugin%>
+        </plugin>
+<%
+})
+%>
+    </plugins>
+  </build>
 </project>

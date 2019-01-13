@@ -80,6 +80,13 @@
     _.each(design.MasterCell, (cell, key) => {
         const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
+    "src/test/java/<%=context.packageCellBaseDir%>/<%=className%>Test.java" : {
+        "template": "src/test/java/master-cell-test.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className,
+            key: key
+        }))%>
+    },
     "src/main/java/<%=context.packageCellBaseDir%>/<%=className%>.java" : {
         "template": "src/main/java/master-cell-class.java._",
         "context" : <%=JSON.stringify(Object.assign({}, context, {

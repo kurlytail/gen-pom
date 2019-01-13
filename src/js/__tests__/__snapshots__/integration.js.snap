@@ -15,10 +15,15 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tube
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/ResponderGatewaySink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RecordDataDatabaseSink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RegisterPost.java from template templates/src/main/java/master-tube-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/DatabaseSinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/DatabaseSink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySourceTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/ResponderTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/RecordDataTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
@@ -28,12 +33,16 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -57,10 +66,15 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tube
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/ResponderGatewaySink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RecordDataDatabaseSink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RegisterPost.java from template templates/src/main/java/master-tube-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/DatabaseSinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/DatabaseSink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySourceTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/ResponderTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/RecordDataTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
@@ -70,12 +84,16 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -99,10 +117,15 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tube
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/ResponderGatewaySink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RecordDataDatabaseSink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RegisterPost.java from template templates/src/main/java/master-tube-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/DatabaseSinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/DatabaseSink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySourceTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/ResponderTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/RecordDataTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
@@ -112,12 +135,16 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -141,10 +168,15 @@ info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tube
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/ResponderGatewaySink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RecordDataDatabaseSink.java from template templates/src/main/java/master-tube-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/tubes/RegisterPost.java from template templates/src/main/java/master-tube-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/DatabaseSinkTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/DatabaseSink.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/GatewaySourceTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/GatewaySource.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/ResponderTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/Responder.java from template templates/src/main/java/master-cell-class.java._
+info: Generating testoutput/src/test/java/com/brainspeedtech/authentication/cells/RecordDataTest.java from template templates/src/test/java/master-cell-test.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/cells/RecordData.java from template templates/src/main/java/master-cell-class.java._
 info: Generating testoutput/src/main/java/com/brainspeedtech/authentication/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generating testoutput/.classpath from template templates/.classpath._
@@ -154,12 +186,16 @@ info: loading extension ./scripts/../templates/extensions/pom-version._
 info: loading extension ./scripts/../templates/extensions/pom-name._
 info: loading extension ./scripts/../templates/extensions/pom-description._
 info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generating testoutput/pom.xml from template templates/pom.xml._
 info: Generating testoutput/.gitignore from template templates/.gitignore._
 info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
