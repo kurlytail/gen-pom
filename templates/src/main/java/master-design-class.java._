@@ -1,4 +1,15 @@
 package <%=context.packageDesignName%>;
+<%
+    const designInputs = _.filter(design.MasterTube, tube => tube.from.external);
+    const designOutputs = _.filter(design.MasterTube, tube => tube.to.external);
+%>
+
+import reactor.core.publisher.Flux;
+<%_.each(_.union(designInputs, designOutputs), port => {
+    const portName = lodash.upperFirst(lodash.camelCase(port.name));
+%>
+import <%=context.packageTubeName%>.<%=portName%>;
+<%});%>
 
 <%
 Object.keys(design.Flow).forEach(key => {
@@ -11,12 +22,34 @@ import <%=context.packageFlowName%>.<%=className%>;
 
 public class <%=context.className%> {
 <%
-Object.keys(design.Flow).forEach(key => {
-    const className = lodash.upperFirst(lodash.camelCase(design.Flow[key].name));
+_.each(design.Flow, flow => {
+    const className = lodash.upperFirst(lodash.camelCase(flow.name));
 %>
-    private <%=className%> <%=lodash.lowerFirst(className)%>Flow;
+    private <%=className%> flow<%=className%>;
 <%
-})
+});
 %>
+
+<%_.each(designInputs, input => {
+    const inputName = lodash.upperFirst(lodash.camelCase(input.name));
+%>
+    private Flux<<%=inputName%>> inputTube<%=inputName%> = Flux.empty();
+    public void setInputTube<%=inputName%>(Flux<<%=inputName%>> input) {
+        this.inputTube<%=inputName%> = input;
+    }
+<%});%>
+
+    public void wire() {
+
+    }
+
+<%_.each(designOutputs, output => {
+    const outputName = lodash.upperFirst(lodash.camelCase(output.name));
+%>
+    private Flux<<%=outputName%>> outputTube<%=outputName%> = Flux.empty();
+    public Flux<<%=outputName%>> getOutputTube<%=outputName%>() {
+        return this.outputTube<%=outputName%>;
+    }
+<%});%>
 
 }
