@@ -78,6 +78,8 @@
 %>
 <%
     _.each(design.MasterCell, (cell, key) => {
+        if(cell.external) return;
+
         const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
     "src/test/java/<%=context.packageCellBaseDir%>/<%=className%>Test.java" : {
