@@ -20,9 +20,15 @@ public class <%=context.className%> {
     }
 <%})%>
 
-    void wireTubes() {
-
+    private boolean isWired = false;
+    public boolean getIsWired() {
+        return this.isWired;
     }
+    public void wireTubes() {
+        this.isWired = true;
+    }
+
+    public <%=context.className%>() {}
 
     public <%=context.className%>(
 <%=_.map(cell.input, input => {

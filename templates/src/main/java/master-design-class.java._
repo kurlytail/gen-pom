@@ -2,6 +2,7 @@ package <%=context.packageDesignName%>;
 <%
     const designInputs = _.filter(design.MasterTube, tube => tube.from.external);
     const designOutputs = _.filter(design.MasterTube, tube => tube.to.external);
+    const designCells = _.filter(design.MasterCell, cell => !cell.external);
 %>
 
 import reactor.core.publisher.Flux;
@@ -10,45 +11,43 @@ import reactor.core.publisher.Flux;
 %>
 import <%=context.packageTubeName%>.<%=portName%>;
 <%});%>
-
-<%
-Object.keys(design.Flow).forEach(key => {
-    const className = lodash.upperFirst(lodash.camelCase(design.Flow[key].name));
+<%_.each(designCells, cell => {
+    const cellName = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
-import <%=context.packageFlowName%>.<%=className%>;
-<%
-})
-%>
+import <%=context.packageCellName%>.<%=cellName%>;
+<%});%>
 
 public class <%=context.className%> {
-<%
-_.each(design.Flow, flow => {
-    const className = lodash.upperFirst(lodash.camelCase(flow.name));
+
+<%_.each(designCells, cell => {
+    const cellName = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
-    private <%=className%> flow<%=className%>;
-<%
-});
-%>
+    private <%=cellName%> cell<%=cellName%> = new <%=cellName%>();
+<%});%>
 
 <%_.each(designInputs, input => {
     const inputName = lodash.upperFirst(lodash.camelCase(input.name));
+    const cellName = lodash.upperFirst(lodash.camelCase(input.to.name))
 %>
-    private Flux<<%=inputName%>> inputTube<%=inputName%> = Flux.empty();
     public void setInputTube<%=inputName%>(Flux<<%=inputName%>> input) {
-        this.inputTube<%=inputName%> = input;
+        this.cell<%=cellName%>.setTube<%=inputName%>(input);
     }
 <%});%>
 
-    public void wire() {
-
+    public void wireCells() {
+<%_.each(designCells, cell => {
+    const cellName = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+        this.cell<%=cellName%>.wireTubes();
+<%});%>
     }
 
 <%_.each(designOutputs, output => {
     const outputName = lodash.upperFirst(lodash.camelCase(output.name));
+    const cellName = lodash.upperFirst(lodash.camelCase(output.from.name))
 %>
-    private Flux<<%=outputName%>> outputTube<%=outputName%> = Flux.empty();
     public Flux<<%=outputName%>> getOutputTube<%=outputName%>() {
-        return this.outputTube<%=outputName%>;
+        return this.cell<%=cellName%>.getTube<%=outputName%>();
     }
 <%});%>
 
