@@ -5,6 +5,7 @@ package <%=context.packageDesignName%>;
     const designCells = _.filter(design.MasterCell, cell => !cell.external);
 %>
 
+import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 <%_.each(_.union(designInputs, designOutputs), port => {
     const portName = lodash.upperFirst(lodash.camelCase(port.name));
@@ -29,17 +30,47 @@ public class <%=context.className%> {
     const inputName = lodash.upperFirst(lodash.camelCase(input.name));
     const cellName = lodash.upperFirst(lodash.camelCase(input.to.name))
 %>
+    private Flux<<%=inputName%>> input<%=inputName%> = Flux.empty();
     public void setInputTube<%=inputName%>(Flux<<%=inputName%>> input) {
-        this.cell<%=cellName%>.setTube<%=inputName%>(input);
+        this.input<%=inputName%> = input;
     }
 <%});%>
 
     public void wireCells() {
-<%_.each(designCells, cell => {
+<%
+const outputsToSubsribe = [];
+let inputsAvailable = _.pluck(designInputs, 'name');
+_.each(designCells, cell => {
     const cellName = lodash.upperFirst(lodash.camelCase(cell.name));
+    const cellInputs = _.pluck(cell.input, 'name');
+    const cellOutputs = _.pluck(cell.output, 'name')
+    const directInputs = _.difference(cellInputs, inputsAvailable);
+
+    _.each(directInputs, input => {
+        const inputName = lodash.upperFirst(lodash.camelCase(input));
+ %>
+        DirectProcessor<<%=inputName%>> processor<%=inputName%> = DirectProcessor.create();
+        Flux<<%=inputName%> input<%=inputName%> = processor<%=inputName%>.publish();
+ <%
+    });
+    _.each(cellInputs, input => {
+        const inputName = lodash.upperFirst(lodash.camelCase(input));
+ %>
+        this.cell<%=cellName%>.setTube<%=inputName%>(input<%=inputName%>);
+ <%
+    });
 %>
         this.cell<%=cellName%>.wireTubes();
-<%});%>
+<%
+    const internalInputs = _.difference(cellOutputs, _.pluck(designOutputs, 'name'));
+    inputsAvailable = [...inputsAvailable, ...internalInputs];
+   _.each(internalInputs, input => {
+        const inputName = lodash.upperFirst(lodash.camelCase(input));
+ %>
+        Flux<<%=inputName%> input<%=inputName%> = this.cell<%=cellName%>.getTube<%=inputName%>();
+ <%
+    });
+});%>
     }
 
 <%_.each(designOutputs, output => {
