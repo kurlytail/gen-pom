@@ -7,6 +7,9 @@ package <%=context.packageDesignName%>;
 
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
 <%_.each(design.MasterTube, port => {
     const portName = lodash.upperFirst(lodash.camelCase(port.name));
 %>
@@ -67,11 +70,39 @@ _.each(designCells, cell => {
 <%
     const internalInputs = _.difference(cellOutputs, _.pluck(designOutputs, 'name'));
     inputsAvailable = [...inputsAvailable, ...internalInputs];
-   _.each(_.difference(internalInputs, subscribeOutputs), input => {
+    _.each(_.difference(internalInputs, subscribeOutputs), input => {
         const inputName = lodash.upperFirst(lodash.camelCase(input));
  %>
         Flux<<%=inputName%>> input<%=inputName%> = this.cell<%=cellName%>.getTube<%=inputName%>();
  <%
+    });
+    _.each(_.intersection(subscribeOutputs, cellOutputs), port => {
+        const portName = lodash.upperFirst(lodash.camelCase(port));
+%>
+        this.cell<%=cellName%>.getTube<%=portName%>().subscribe(new Subscriber<<%=portName%>>() {
+
+            private Subscription subscription;
+            @Override
+            public void onSubscribe(Subscription s) {
+                this.subscription = s;
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                processor<%=portName%>.onError(t);
+            }
+
+            @Override
+            public void onComplete() {
+                processor<%=portName%>.onComplete();
+            }
+
+            @Override
+            public void onNext(<%=portName%> t) {
+                processor<%=portName%>.onNext(t);
+            }
+        });
+<%
     });
 });%>
     }
