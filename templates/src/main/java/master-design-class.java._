@@ -7,7 +7,7 @@ package <%=context.packageDesignName%>;
 
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
-<%_.each(_.union(designInputs, designOutputs), port => {
+<%_.each(design.MasterTube, port => {
     const portName = lodash.upperFirst(lodash.camelCase(port.name));
 %>
 import <%=context.packageTubeName%>.<%=portName%>;
@@ -40,17 +40,20 @@ public class <%=context.className%> {
 <%
 const outputsToSubsribe = [];
 let inputsAvailable = _.pluck(designInputs, 'name');
+let subscribeOutputs = [];
 _.each(designCells, cell => {
     const cellName = lodash.upperFirst(lodash.camelCase(cell.name));
     const cellInputs = _.pluck(cell.input, 'name');
     const cellOutputs = _.pluck(cell.output, 'name')
     const directInputs = _.difference(cellInputs, inputsAvailable);
 
+    subscribeOutputs = [...subscribeOutputs, ...directInputs];
+
     _.each(directInputs, input => {
         const inputName = lodash.upperFirst(lodash.camelCase(input));
  %>
         DirectProcessor<<%=inputName%>> processor<%=inputName%> = DirectProcessor.create();
-        Flux<<%=inputName%> input<%=inputName%> = processor<%=inputName%>.publish();
+        Flux<<%=inputName%>> input<%=inputName%> = processor<%=inputName%>.publish();
  <%
     });
     _.each(cellInputs, input => {
@@ -64,10 +67,10 @@ _.each(designCells, cell => {
 <%
     const internalInputs = _.difference(cellOutputs, _.pluck(designOutputs, 'name'));
     inputsAvailable = [...inputsAvailable, ...internalInputs];
-   _.each(internalInputs, input => {
+   _.each(_.difference(internalInputs, subscribeOutputs), input => {
         const inputName = lodash.upperFirst(lodash.camelCase(input));
  %>
-        Flux<<%=inputName%> input<%=inputName%> = this.cell<%=cellName%>.getTube<%=inputName%>();
+        Flux<<%=inputName%>> input<%=inputName%> = this.cell<%=cellName%>.getTube<%=inputName%>();
  <%
     });
 });%>
