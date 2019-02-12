@@ -1,5 +1,0 @@
-package <%=context.packageFlowName%>;
-
-public class <%=context.className%> {
-
-}

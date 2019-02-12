@@ -1,5 +1,0 @@
-package <%=context.packageTubeName%>;
-
-public class <%=context.className%> {
-
-}
