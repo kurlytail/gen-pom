@@ -38,7 +38,7 @@ pipeline {
                 checkout scm
 
                 nodejs(nodeJSInstallationName: 'Node') {
-                    sh 'npm install --no-save'
+                    sh 'npm install'
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
                     sh 'npm run test'
@@ -46,6 +46,12 @@ pipeline {
                     sh 'npm publish'
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            slackSend message: "gen-pom build ${env.NPM_VERSION_NUMBER} - Status ${currentBuild.result} - ${env.BUILD_URL}"
         }
     }
 }
