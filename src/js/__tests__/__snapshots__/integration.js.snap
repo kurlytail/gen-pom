@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`# integration test ## should generate design 1`] = `
-"info: loading extension ./scripts/../templates/extensions/pom-group-id._
-info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+"info: loading map templates/map.json
+info: loading extension templates/extensions/pom-group-id._
+info: loading extension templates/extensions/pom-artifact-id._
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.settings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
 info: Generated testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
@@ -885,21 +886,22 @@ info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/cells/Performan
 info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generated testoutput/.classpath from template templates/.classpath._
 info: Generated testoutput/.project from template templates/.project._
-info: loading extension ./scripts/../templates/extensions/pom-model-version._
-info: loading extension ./scripts/../templates/extensions/pom-version._
-info: loading extension ./scripts/../templates/extensions/pom-name._
-info: loading extension ./scripts/../templates/extensions/pom-description._
-info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
+info: loading extension templates/extensions/pom-model-version._
+info: loading extension templates/extensions/pom-version._
+info: loading extension templates/extensions/pom-name._
+info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-reactor-core.version._
+info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-junit-platform.version._
+info: loading extension templates/extensions/pom-property-junit-jupiter.version._
+info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-reactor-test.dependency._
+info: loading extension templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -915,8 +917,9 @@ info: sgen is done
 `;
 
 exports[`# integration test ## should generate design and run pom commands 1`] = `
-"info: loading extension ./scripts/../templates/extensions/pom-group-id._
-info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+"info: loading map templates/map.json
+info: loading extension templates/extensions/pom-group-id._
+info: loading extension templates/extensions/pom-artifact-id._
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.settings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
 info: Generated testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
@@ -1799,21 +1802,22 @@ info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/cells/Performan
 info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generated testoutput/.classpath from template templates/.classpath._
 info: Generated testoutput/.project from template templates/.project._
-info: loading extension ./scripts/../templates/extensions/pom-model-version._
-info: loading extension ./scripts/../templates/extensions/pom-version._
-info: loading extension ./scripts/../templates/extensions/pom-name._
-info: loading extension ./scripts/../templates/extensions/pom-description._
-info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
+info: loading extension templates/extensions/pom-model-version._
+info: loading extension templates/extensions/pom-version._
+info: loading extension templates/extensions/pom-name._
+info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-reactor-core.version._
+info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-junit-platform.version._
+info: loading extension templates/extensions/pom-property-junit-jupiter.version._
+info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-reactor-test.dependency._
+info: loading extension templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -1829,8 +1833,9 @@ info: sgen is done
 `;
 
 exports[`# integration test ## should generate design with merge 1`] = `
-"info: loading extension ./scripts/../templates/extensions/pom-group-id._
-info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+"info: loading map templates/map.json
+info: loading extension templates/extensions/pom-group-id._
+info: loading extension templates/extensions/pom-artifact-id._
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.settings/org.eclipse.jdt.core.prefs from template templates/.settings/org.eclipse.jdt.core.prefs._
 info: Generated testoutput/.settings/org.eclipse.m2e.core.prefs from template templates/.settings/org.eclipse.m2e.core.prefs._
@@ -2713,21 +2718,22 @@ info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/cells/Performan
 info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generated testoutput/.classpath from template templates/.classpath._
 info: Generated testoutput/.project from template templates/.project._
-info: loading extension ./scripts/../templates/extensions/pom-model-version._
-info: loading extension ./scripts/../templates/extensions/pom-version._
-info: loading extension ./scripts/../templates/extensions/pom-name._
-info: loading extension ./scripts/../templates/extensions/pom-description._
-info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
+info: loading extension templates/extensions/pom-model-version._
+info: loading extension templates/extensions/pom-version._
+info: loading extension templates/extensions/pom-name._
+info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-reactor-core.version._
+info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-junit-platform.version._
+info: loading extension templates/extensions/pom-property-junit-jupiter.version._
+info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-reactor-test.dependency._
+info: loading extension templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
@@ -2743,8 +2749,9 @@ info: sgen is done
 `;
 
 exports[`# integration test ## should generate design with merge 2`] = `
-"info: loading extension ./scripts/../templates/extensions/pom-group-id._
-info: loading extension ./scripts/../templates/extensions/pom-artifact-id._
+"info: loading map templates/map.json
+info: loading extension templates/extensions/pom-group-id._
+info: loading extension templates/extensions/pom-artifact-id._
 info: Opening git repository testoutput/.git
 warn: Ignoring error Error: cannot stash changes - there is nothing to stash.
 info: Attempting to use branch master-sgen-generated
@@ -3630,21 +3637,22 @@ info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/cells/Performan
 info: Generated testoutput/src/main/java/com/brainspeedtech/pmgr/flows/Enum.java from template templates/src/main/java/master-flow-enum.java._
 info: Generated testoutput/.classpath from template templates/.classpath._
 info: Generated testoutput/.project from template templates/.project._
-info: loading extension ./scripts/../templates/extensions/pom-model-version._
-info: loading extension ./scripts/../templates/extensions/pom-version._
-info: loading extension ./scripts/../templates/extensions/pom-name._
-info: loading extension ./scripts/../templates/extensions/pom-description._
-info: loading extension ./scripts/../templates/extensions/pom-property-reactor-core.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-maven-surefire-plugin.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-platform.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-junit-jupiter.version._
-info: loading extension ./scripts/../templates/extensions/pom-property-java.version._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-reactor-core.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
-info: loading extension ./scripts/../templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
+info: loading extension templates/extensions/pom-model-version._
+info: loading extension templates/extensions/pom-version._
+info: loading extension templates/extensions/pom-name._
+info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-reactor-core.version._
+info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-junit-platform.version._
+info: loading extension templates/extensions/pom-property-junit-jupiter.version._
+info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-reactor-test.dependency._
+info: loading extension templates/extensions/pom-dependencies-reactor-core.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
+info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
