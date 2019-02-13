@@ -18,9 +18,7 @@ extension('pom-property-.*').forEach(property => {
 <%
 extension('pom-dependencies-.*').forEach(dependency => {
 %>
-    <dependency>
-        <%=dependency%>
-    </dependency>
+    <%=dependency%>
 <%
 })
 %>
@@ -32,9 +30,7 @@ extension('pom-dependencies-.*').forEach(dependency => {
 <%
 extension('pom-plugins-.*').forEach(plugin => {
 %>
-        <plugin>
-            <%=plugin%>
-        </plugin>
+    <%=plugin%>
 <%
 })
 %>
