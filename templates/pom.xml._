@@ -7,7 +7,8 @@
   <description><%=extension('pom-description')[0]%></description>
   <properties>
 <%
-extension('pom-property-.*').forEach(property => {
+extension('pom-property-.*').forEach(ext => {
+    const property = ext.generate();
 %>
     <%=property%>
 <%
