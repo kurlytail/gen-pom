@@ -4,7 +4,7 @@ pipeline {
     agent none
 
     triggers {
-        upstream(upstreamProjects: 'kurlytail/gen-lib/master', threshold: hudson.model.Result.SUCCESS)
+        upstream(upstreamProjects: 'kurlytail/gen-lib/master,kurlytail/gen-sgen/master', threshold: hudson.model.Result.SUCCESS)
     }
 
     parameters {

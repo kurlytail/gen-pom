@@ -17,7 +17,8 @@ extension('pom-property-.*').forEach(ext => {
   </properties>
   <dependencies>
 <%
-extension('pom-dependencies-.*').forEach(dependency => {
+extension('pom-dependencies-.*').forEach(ext => {
+    const dependency = ext.generate();
 %>
     <%=dependency%>
 <%
@@ -29,7 +30,8 @@ extension('pom-dependencies-.*').forEach(dependency => {
     <finalName><%=extension('pom-name')[0]%></finalName>
     <plugins>
 <%
-extension('pom-plugins-.*').forEach(plugin => {
+extension('pom-plugins-.*').forEach(ext => {
+    const plugin = ext.generate();
 %>
     <%=plugin%>
 <%
