@@ -28,4 +28,13 @@ describe('# integration test', () => {
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
     });
+
+    it('## should generate design and run pom commands with reactor extensions', () => {
+        let output = execSync(
+            './scripts/sgen-pom.sh -e templates/addons/reactor -d src/test/fixture/design.json -o testoutput'
+        ).toString();
+        expect(output).toMatchSnapshot();
+        output = execSync('npm install', { cwd: 'testoutput' }).toString();
+        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
+    });
 });

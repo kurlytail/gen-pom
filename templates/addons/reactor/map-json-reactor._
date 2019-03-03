@@ -1,0 +1,86 @@
+<%
+    const packageBaseDir = extension('pom-group-id')[0].replace(/\./, '/') + '/' +
+            lodash.kebabCase(extension('pom-artifact-id')[0]).replace(/-/, '/');
+    let context = {
+        packageBaseDir : packageBaseDir,
+        packageTubeBaseDir: packageBaseDir + "/tubes",
+        packageCellBaseDir: packageBaseDir + "/cells",
+        packageDesignBaseDir: packageBaseDir + "/designs",
+        packageFlowBaseDir: packageBaseDir + "/flows"
+    };
+
+    Object.assign(context, {
+        packageName: context.packageBaseDir.replace(/\//g, '.'),
+        packageTubeName: context.packageTubeBaseDir.replace(/\//g, '.'),
+        packageCellName: context.packageCellBaseDir.replace(/\//g, '.'),
+        packageDesignName: context.packageDesignBaseDir.replace(/\//g, '.'),
+        packageFlowName: context.packageFlowBaseDir.replace(/\//g, '.')
+    });
+%>
+<%
+    {
+        const className = lodash.upperFirst(lodash.camelCase(design.MasterDesign[0].name));
+%>
+    "src/main/java/<%=context.packageDesignBaseDir%>/<%=className%>.java" : {
+        "template": "src/main/java/master-design-class.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className
+        }))%>
+    },
+<%
+    }
+%>
+<%
+    _.each(design.Flow, (flow, key) => {
+        const className = lodash.upperFirst(lodash.camelCase(flow.name));
+%>
+    "src/main/java/<%=context.packageFlowBaseDir%>/<%=className%>.java" : {
+        "template": "src/main/java/master-flow-class.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className
+        }))%>
+    },
+<%
+    })
+%>
+<%
+    _.each(design.MasterTube, (tube, key) => {
+        const className = lodash.upperFirst(lodash.camelCase(tube.name));
+%>
+    "src/main/java/<%=context.packageTubeBaseDir%>/<%=className%>.java" : {
+        "template": "src/main/java/master-tube-class.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className,
+            key: key
+        }))%>
+    },
+<%
+    })
+%>
+<%
+    _.each(design.MasterCell, (cell, key) => {
+        if(cell.external) return;
+
+        const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+    "src/test/java/<%=context.packageCellBaseDir%>/<%=className%>Test.java" : {
+        "template": "src/test/java/master-cell-test.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className,
+            key: key
+        }))%>
+    },
+    "src/main/java/<%=context.packageCellBaseDir%>/<%=className%>.java" : {
+        "template": "src/main/java/master-cell-class.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className,
+            key: key
+        }))%>
+    },
+<%
+    })
+%>
+    "src/main/java/<%=context.packageFlowBaseDir%>/Enum.java" : {
+        "template": "src/main/java/master-flow-enum.java._",
+        "context" : <%=JSON.stringify(context)%>
+    },
