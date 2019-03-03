@@ -123,5 +123,8 @@
     },
     "maven.pem": {
         "template": "maven.pem._"
+    },
+    ".prettierrc": {
+        "template": ".prettierrc._"
     }
 }

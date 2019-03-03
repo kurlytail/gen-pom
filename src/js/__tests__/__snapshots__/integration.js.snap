@@ -907,6 +907,7 @@ info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: Generated testoutput/settings.xml from template templates/settings.xml._
 info: Generated testoutput/maven.pem from template templates/maven.pem._
+info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -1823,6 +1824,7 @@ info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: Generated testoutput/settings.xml from template templates/settings.xml._
 info: Generated testoutput/maven.pem from template templates/maven.pem._
+info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -2739,6 +2741,7 @@ info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: Generated testoutput/settings.xml from template templates/settings.xml._
 info: Generated testoutput/maven.pem from template templates/maven.pem._
+info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -3658,6 +3661,7 @@ info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: Generated testoutput/settings.xml from template templates/settings.xml._
 info: Generated testoutput/maven.pem from template templates/maven.pem._
+info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 warn: Checkout branch master-sgen-generated
 warn: Checkout branch master-sgen-generated
 warn: Nothing changed in generated files

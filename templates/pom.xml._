@@ -5,38 +5,25 @@
   <version><%=extension('pom-version')[0]%></version>
   <name><%=extension('pom-name')[0]%></name>
   <description><%=extension('pom-description')[0]%></description>
+
   <properties>
-<%
-extension('pom-property-.*').forEach(ext => {
-    const property = ext.generate();
-%>
+<%extension('pom-property-.*').forEach(property => {%>
     <%=property%>
-<%
-})
-%>
+<%});%>
   </properties>
+
   <dependencies>
-<%
-extension('pom-dependencies-.*').forEach(ext => {
-    const dependency = ext.generate();
-%>
+<%extension('pom-dependencies-.*').forEach(dependency => {%>
     <%=dependency%>
-<%
-})
-%>
+<%});%>
   </dependencies>
 
   <build>
     <finalName><%=extension('pom-name')[0]%></finalName>
     <plugins>
-<%
-extension('pom-plugins-.*').forEach(ext => {
-    const plugin = ext.generate();
-%>
+<%extension('pom-plugins-.*').forEach(plugin => {%>
     <%=plugin%>
-<%
-})
-%>
+<%});%>
     </plugins>
   </build>
 </project>
