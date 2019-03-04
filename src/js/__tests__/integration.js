@@ -27,6 +27,7 @@ describe('# integration test', () => {
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
+        output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
     });
 
     it('## should generate design and run pom commands with reactor extensions', () => {
@@ -36,5 +37,6 @@ describe('# integration test', () => {
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
+        output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
     });
 });
