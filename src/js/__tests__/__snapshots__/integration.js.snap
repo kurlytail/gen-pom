@@ -17,14 +17,20 @@ info: loading extension templates/extensions/pom-artifact-id._
 info: loading extension templates/extensions/pom-version._
 info: loading extension templates/extensions/pom-name._
 info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-scala-maven-plugin.version._
+info: loading extension templates/extensions/pom-property-scala-library.version._
 info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-maven-shade-plugin.version._
 info: loading extension templates/extensions/pom-property-junit-platform.version._
 info: loading extension templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-scala-library.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-scala-maven-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-shade-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
@@ -58,14 +64,20 @@ info: loading extension templates/extensions/pom-artifact-id._
 info: loading extension templates/extensions/pom-version._
 info: loading extension templates/extensions/pom-name._
 info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-scala-maven-plugin.version._
+info: loading extension templates/extensions/pom-property-scala-library.version._
 info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-maven-shade-plugin.version._
 info: loading extension templates/extensions/pom-property-junit-platform.version._
 info: loading extension templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-scala-library.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-scala-maven-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-shade-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
@@ -974,16 +986,22 @@ info: loading extension templates/extensions/pom-version._
 info: loading extension templates/extensions/pom-name._
 info: loading extension templates/extensions/pom-description._
 info: loading extension templates/addons/reactor/pom-property-reactor-core.version._
+info: loading extension templates/extensions/pom-property-scala-maven-plugin.version._
+info: loading extension templates/extensions/pom-property-scala-library.version._
 info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-maven-shade-plugin.version._
 info: loading extension templates/extensions/pom-property-junit-platform.version._
 info: loading extension templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension templates/extensions/pom-property-java.version._
 info: loading extension templates/addons/reactor/pom-dependencies-reactor-test.dependency._
 info: loading extension templates/addons/reactor/pom-dependencies-reactor-core.dependency._
+info: loading extension templates/extensions/pom-dependencies-scala-library.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-scala-maven-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-shade-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
@@ -1017,14 +1035,20 @@ info: loading extension templates/extensions/pom-artifact-id._
 info: loading extension templates/extensions/pom-version._
 info: loading extension templates/extensions/pom-name._
 info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-scala-maven-plugin.version._
+info: loading extension templates/extensions/pom-property-scala-library.version._
 info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-maven-shade-plugin.version._
 info: loading extension templates/extensions/pom-property-junit-platform.version._
 info: loading extension templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-scala-library.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-scala-maven-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-shade-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
@@ -1061,14 +1085,20 @@ info: loading extension templates/extensions/pom-artifact-id._
 info: loading extension templates/extensions/pom-version._
 info: loading extension templates/extensions/pom-name._
 info: loading extension templates/extensions/pom-description._
+info: loading extension templates/extensions/pom-property-scala-maven-plugin.version._
+info: loading extension templates/extensions/pom-property-scala-library.version._
 info: loading extension templates/extensions/pom-property-maven-surefire-plugin.version._
+info: loading extension templates/extensions/pom-property-maven-shade-plugin.version._
 info: loading extension templates/extensions/pom-property-junit-platform.version._
 info: loading extension templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension templates/extensions/pom-property-java.version._
+info: loading extension templates/extensions/pom-dependencies-scala-library.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
+info: loading extension templates/extensions/pom-plugins-scala-maven-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-surefire-plugin.plugin._
+info: loading extension templates/extensions/pom-plugins-maven-shade-plugin._
 info: loading extension templates/extensions/pom-plugins-maven-compiler-plugin.plugin._
 info: Generated testoutput/pom.xml from template templates/pom.xml._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
