@@ -46,9 +46,9 @@ pipeline {
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
                     withMaven {
-                        sh 'PATH=$PATH:$MVN_CMD_DIR npm run test'
                         sh 'env'
                         sh 'which mvn'
+                        sh 'PATH=$PATH:$MVN_CMD_DIR npm run test'
                     }
                     junit 'test-report.xml'
                     publishHTML target: [
