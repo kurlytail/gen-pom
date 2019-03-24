@@ -16,17 +16,9 @@ describe('# integration test', () => {
         output = execSync('sgen -g `pwd`/dist/pom.min.js -d src/test/fixture/design.json -o testoutput').toString();
         output = output.replace(/info: Loaded generator .*pom.min.js.*/, '');
         expect(output).toMatchSnapshot();
-        output = execSync('npm install', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
 
-        try {
-            output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
-        } catch {
-
-            // eslint-disable-next-line no-console
-            console.log(output);
-            throw output;
-        }
-
+        execSync('npm install', { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('npm run lint',  { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('mvn compile',  { cwd: 'testoutput', stdio: 'inherit' });
     });
 });
