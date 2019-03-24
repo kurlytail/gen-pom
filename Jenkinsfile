@@ -48,6 +48,7 @@ pipeline {
                     withMaven {
                         sh 'env'
                         sh 'which mvn'
+                        sh 'mvn --version'
                         sh 'PATH=$PATH:$MVN_CMD_DIR npm run test'
                     }
                     junit 'test-report.xml'
