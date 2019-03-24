@@ -18,9 +18,15 @@ describe('# integration test', () => {
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
-        output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
 
-        // eslint-disable-next-line no-console
-        console.log(output);
+        try {
+            output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
+        } catch {
+
+            // eslint-disable-next-line no-console
+            console.log(output);
+            throw output;
+        }
+
     });
 });
