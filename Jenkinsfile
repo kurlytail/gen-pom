@@ -3,13 +3,17 @@
 pipeline {
     agent none
 
-    //triggers {
-    //    upstream(upstreamProjects: 'kurlytail/gen-lib/master', threshold: hudson.model.Result.SUCCESS)
-    //}
+    triggers {
+        upstream(upstreamProjects: 'kurlytail/gen-lib/master', threshold: hudson.model.Result.SUCCESS)
+    }
 
     parameters {
-        string(defaultValue: "1.0", description: 'Build version prefix', name: 'BUILD_VERSION_PREFIX')
+        string(defaultValue: "1.2", description: 'Build version prefix', name: 'BUILD_VERSION_PREFIX')
         string(defaultValue: "", description: 'Build number offset', name: 'BUILDS_OFFSET')
+    }
+
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '4'))
     }
 
     stages {
@@ -43,7 +47,26 @@ pipeline {
                     sh 'npm run lint'
                     sh 'npm run test'
                     junit 'test-report.xml'
+                    publishHTML target: [
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: true,
+                        reportDir: 'coverage',
+                        reportFiles: 'index.html',
+                        reportName: 'Coverage Report'
+                    ]
+                    sh 'npm run build'
                     sh 'npm publish'
+                    sh 'mkdir __npm_versions'
+                    sh 'npm outdated > __npm_versions/index.html || true'
+                    publishHTML target: [
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: true,
+                        reportDir: '__npm_versions',
+                        reportFiles: 'index.html',
+                        reportName: 'NPM versions'
+                    ]
                 }
             }
         }
