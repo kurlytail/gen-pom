@@ -45,9 +45,7 @@ pipeline {
                     sh 'npm install --no-save'
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
-                    withMaven {
-                        sh 'npm run test'
-                    }
+                    sh 'npm run test'
                     junit 'test-report.xml'
                     publishHTML target: [
                         allowMissing: false,
