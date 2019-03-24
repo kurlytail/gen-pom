@@ -59,7 +59,8 @@
         "testPathIgnorePatterns": [
             "testoutput",
             ".generated"
-        ]
+        ],
+        "verbose": false
     },
     "scripts": {
         "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
