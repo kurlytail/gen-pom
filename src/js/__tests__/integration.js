@@ -20,14 +20,4 @@ describe('# integration test', () => {
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
         output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
     });
-
-    it('## should generate design and run pom commands with reactor extensions', () => {
-        let output = execSync(
-            'sgen -g `pwd`/dist/pom.min.js -e templates/addons/reactor -d src/test/fixture/design.json -o testoutput'
-        ).toString();
-        expect(output).toMatchSnapshot();
-        output = execSync('npm install', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
-        output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
-    });
 });
