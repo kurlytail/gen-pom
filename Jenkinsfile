@@ -45,6 +45,7 @@ pipeline {
                     sh 'npm install --no-save'
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
+                    sh 'sudo ls -l'
                     withMaven {
                         sh 'env'
                         sh 'which mvn'
