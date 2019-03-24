@@ -18,6 +18,6 @@ describe('# integration test', () => {
         expect(output).toMatchSnapshot();
         execSync('npm install', { cwd: 'testoutput', stdio: 'inherit' });
         execSync('npm run lint',  { cwd: 'testoutput', stdio: 'inherit' });
-        //execSync('mvn compile',  { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('mvn compile',  { cwd: 'testoutput', stdio: 'inherit' });
     });
 });
