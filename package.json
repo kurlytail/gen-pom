@@ -1,7 +1,7 @@
 {
     "name": "@kurlytail/gen-pom",
     "description": "POM project generator",
-    "version": "1.3.101",
+    "version": "1.3.102",
     "main": "dist/pom.min.js",
     "devDependencies": {
         "@babel/cli": "7.10.5",
